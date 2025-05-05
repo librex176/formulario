@@ -1,0 +1,233 @@
+/* form.css */
+
+.form-container {
+    background-color: #fff; /* Fondo blanco para un look más limpio */
+    padding: 40px; /* Aumentamos el padding para más espacio */
+    border-radius: 12px; /* Bordes más redondeados para el contenedor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada y moderna */
+}
+
+.form-container h2 {
+    color: #333;
+    margin-bottom: 35px; /* Más espacio debajo del título */
+    text-align: center;
+    font-weight: 500; /* Un peso de fuente ligeramente más ligero */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Más espacio entre los grupos de campos */
+}
+
+.form-label {
+    display: block;
+    color: #777; /* Un tono de gris más suave */
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px; /* Mayor padding para un campo más grande */
+    border: 1px solid #ddd; /* Borde más claro */
+    border-radius: 8px; /* Bordes más redondeados para los campos */
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones para un feedback visual suave */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff; /* Mantenemos el color primario al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra de enfoque más sutil */
+}
+
+.form-control::placeholder {
+    color: #aaa; /* Placeholder más claro */
+    opacity: 1;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px; /* Un poco más alto por defecto */
+}
+
+.btn-primary-custom {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 30px; /* Botón más grande */
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados para el botón */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el botón */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil en el botón */
+}
+
+.btn-primary-custom:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.btn-primary-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para la columna de la imagen (sin cambios significativos en la apariencia del formulario) */
+.imagen {
+    background-image: url("../img/evoweb.png");
+    background-size: cover; /* Asegúrate de seguir usando cover para que la imagen llene el espacio */
+    background-position: bottom center; /* Alinea la parte inferior de la imagen al centro del contenedor */
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.logo{
+    height: 90%;
+    width: 100%;
+}
+
+.texto-llamativo {
+    font-family: 'Montserrat', sans-serif; /* Una fuente moderna y legible */
+    font-size: 2.5em; /* Tamaño de fuente grande para destacar */
+    font-weight: 700; /* Negrita para mayor impacto */
+    color: #333; /* Color de texto oscuro para buena legibilidad */
+    text-align: center; /* Centrar el texto */
+    letter-spacing: 0.05em; /* Ligero espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición suave para efectos hover */
+}
+
+
+
+/* Opcional: Un efecto de "brillo" sutil */
+.texto-brillante {
+    background: linear-gradient(90deg, #333 0%, #eee 80%, #333 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: brillo 10s linear infinite;
+}
+
+@keyframes brillo {
+    to { background-position: 200% center; }
+}
+
+.fz1{
+    font-size: 2rem;
+        
+    font-weight: 900; /* Negrita extra para máxima fuerza */
+    color: #2e2e2e; /* Un gris oscuro sofisticado */
+    text-align: left; /* Centrar el título */
+    letter-spacing: 0.08em; /* Espaciado entre letras para elegancia */
+    line-height: 1.2; /* Espacio entre líneas para mejor lectura */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra muy sutil para levantar el texto */
+    margin-bottom: 0.5em; /* Espacio debajo del título */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.fz2{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.card-1{
+    background-image: url("../img/espejos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+.card-2{
+    background-image: url("../img/dinero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+.card-3{
+    background-image: url("../img/cubos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.btn-custom {
+    display: inline-block; /* Para que ocupe solo el ancho necesario */
+    padding: 12px 30px; /* Ajusta el padding vertical y horizontal */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    font-weight: 600; /* Peso de la fuente (semi-negrita) */
+    color: #fff; /* Color del texto (blanco) */
+    background-color: #007bff; /* Color de fondo (azul primario de Bootstrap, puedes cambiarlo) */
+    border: 2px solid #007bff; /* Borde sólido con el mismo color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el hover */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra */
+}
+
+.btn-custom:hover {
+    background-color: #fff; /* Fondo blanco al pasar el ratón */
+    color: #007bff; /* Texto azul al pasar el ratón */
+    border-color: #007bff; /* Borde azul al pasar el ratón */
+}
+
+.btn-custom:focus {
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Añade un contorno de enfoque personalizado */
+}
+
+.btn-custom:active {
+    background-color: #0056b3; /* Fondo azul más oscuro al hacer clic */
+    border-color: #0056b3; /* Borde azul más oscuro al hacer clic */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra más sutil al hacer clic */
+    transform: translateY(1px); /* Pequeño efecto de "hundimiento" al hacer clic */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body al menos ocupe toda la altura del viewport */
+}
+
+.container-fluid {
+    flex-grow: 1; /* Permite que el container-fluid crezca y ocupe el espacio restante del body */
+    display: flex; /* Para centrar el contenido dentro del container-fluid si es necesario */
+    align-items: center; /* Centra verticalmente el contenido dentro del container-fluid */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del container-fluid */
+    padding: 3px; /* Mantén el padding que tenías */
+}
+
+.row {
+    width: 90%; /* Mantén el ancho que tenías */
+    max-height: 90%; /* Opcional: Limita el crecimiento máximo de la fila */
+    display: flex; /* Para controlar la disposición de las columnas */
+    align-items: stretch; /* Hace que las columnas se estiren para tener la misma altura */
+}
+
+/* Estilos específicos para pantallas no móviles (puedes ajustar el breakpoint) */
+@media (min-width: 768px) { /* Pantallas medianas y superiores */
+    .info-col {
+        /* Mantén tus estilos para la columna de información */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0; /* Elimina el margen inferior en pantallas más grandes */
+    }
+
+    .form-col {
+        /* Mantén tus estilos para la columna del formulario */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente el formulario dentro de su columna */
+        height: auto; /* Permite que la altura se ajuste al contenido o al estiramiento de la fila */
+    }
+}
+
+/* Opcional: Ajustes para el contenedor del formulario si es necesario */
+.form-container {
+    /* Puedes mantener tus estilos */
+    width: 100%;
+}
